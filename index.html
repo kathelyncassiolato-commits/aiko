@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduFlow - Gestão Escolar e Técnica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho / Header -->
+  <header class="navbar">
+    <div class="logo">
+      <h1>Edu<span>Flow</span></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#dashboard">Painel</a></li>
+        <li><a href="#kanban">Minhas Tarefas</a></li>
+        <li><a href="#dicas">Dicas de Estudo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção Principal / Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Domine sua rotina escolar e técnica sem estresse</h2>
+      <p>
+        Centralize prazos, divida grandes projetos em micro-metas e desenvolva a autogestão necessária para o sucesso acadêmico e profissional.
+      </p>
+      <a href="#kanban" class="btn-primary">Organizar Minhas Tarefas</a>
+    </div>
+  </section>
+
+  <!-- Container Principal -->
+  <main class="container">
+
+    <!-- Seção do Quadro Kanban (Protótipo Visual) -->
+    <section id="kanban" class="kanban-section">
+      <div class="section-header">
+        <h2>Quadro de Tarefas das Disciplinas</h2>
+        <button class="btn-secondary" id="openModal">+ Nova Tarefa</button>
+      </div>
+
+      <div class="kanban-board">
+        
+        <!-- Coluna: A Fazer -->
+        <div class="kanban-column">
+          <div class="column-header status-todo">
+            <h3>A Fazer</h3>
+            <span class="count">2</span>
+          </div>
+          <div class="task-list">
+            <div class="card">
+              <span class="tag tag-tecnica">Programação</span>
+              <h4>Testar lógica do código</h4>
+              <p>Testar rotas da API e corrigir eventuais erros de sintaxe.</p>
+              <div class="card-footer">
+                <span class="date">📅 Prazo: Amanhã</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <span class="tag tag-geral">História</span>
+              <h4>Revisão para a prova</h4>
+              <p>Ler capítulos 3 e 4 sobre a Era Vargas.</p>
+              <div class="card-footer">
+                <span class="date">📅 Prazo: Em 3 dias</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna: Fazendo -->
+        <div class="kanban-column">
+          <div class="column-header status-doing">
+            <h3>Fazendo</h3>
+            <span class="count">1</span>
+          </div>
+          <div class="task-list">
+            <div class="card">
+              <span class="tag tag-tecnica">Robótica</span>
+              <h4>Desenhar circuito do robô</h4>
+              <p>Montar o esquema elétrico preliminar no Tinkercad.</p>
+              <div class="card-footer">
+                <span class="date">📅 Prazo: Hoje</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna: Feito -->
+        <div class="kanban-column">
+          <div class="column-header status-done">
+            <h3>Feito</h3>
+            <span class="count">1</span>
+          </div>
+          <div class="task-list">
+            <div class="card completed">
+              <span class="tag tag-geral">Matemática</span>
+              <h4>Exercícios de Trigonometria</h4>
+              <p>Resolver lista de 10 exercícios da apostila.</p>
+              <div class="card-footer">
+                <span class="date">✔ Concluído</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Seção Informativa (Conteúdo do Texto de Apoio) -->
+    <section id="dicas" class="info-section">
+      <h2>Por que a Autogestão é Fundamental?</h2>
+      
+      <div class="grid-info">
+        <div class="info-card">
+          <h3>1. Centralização do Tempo</h3>
+          <p>Depender da memória ou de anotações dispersas gera o risco de perder prazos e aumenta o estresse diário. Ter uma visão global antecipa gargalos na semana.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>2. Micro-metas para Grandes Projetos</h3>
+          <p>Projetos técnicos (como programar ou montar robôs) exigem testes e correções. Dividir um projeto em pequenas tarefas diárias evita o desespero na véspera.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>3. Preparação para o Mercado</h3>
+          <p>Aprender a gerenciar prioridades no ambiente escolar desenvolve a autogestão — uma das habilidades profissionais mais valorizadas do mercado moderno.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2026 EduFlow - Plataforma de Organização Acadêmica e Técnica.</p>
+  </footer>
+
+</body>
+</html>
